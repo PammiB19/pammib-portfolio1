@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Website</title>
+  <link href="styleV2.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/4af107d51a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+  <nav class="navbar navbar-light justify-content-between">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">  <img src="logo.jpg" alt="logo image"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">About</a>
+          <!-- replace nav items  -->
+          <a class="nav-link" href="casestudy.html">Case Study</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="plantidentifierv2.html">Plant Identifier</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<section id='contact'>
+  <h1 class='text-alignment-center'>Say Hi!</h1>
+  <form action='/submit' class='container text-alignment-center'>
+  <form>
+    <div class="input-group">
+      <label for="fname">First Name</label>
+      <input
+        id="fname"
+        name="fname"
+        placeholder="Enter first name"
+        required="required"
+      />
+    </div>
+    <div class="input-group">
+      <label for="lname">Last Name</label>
+      <input
+        id="lname"
+        name="lname"
+        placeholder="Enter last name"
+        required="required"
+      />
+    </div>
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+      />
+    </div>
+    <div class="input-group">
+      <label for="subject">Subject</label>
+      <input
+        id="subject"
+        name="subject"
+        placeholder="Enter subject here"
+        required="required"
+      />
+    </div>
+    <div class="input-group">
+      <label for="message">Any Message?</label>
+      <input
+        id="message"
+        name="message"
+        placeholder="Optional"
+        />
+    </div>
+    <div class="submit-group">
+      <button type="submit">Submit form</button>
+    </div>
+  </form>
+
+<br><br><br>
+    <div id="socials" class="text-alignment-center">
+      <h2>Socials: Reach out! </h2>
+      <div id="social-links">
+        <a href="https://github.com/PammiB19" target="_blank">
+          <img src="github-logo.png" alt="Github logo" width="50" height="50">
+        </a>
+        <a href="https://www.linkedin.com/in/pammi-balani-bba882251/" target="_blank">
+          <img src="linkedin-logo.jpeg" alt="LinkedIn Logo" width="50" height="50">
+        </a>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    </body>
+
+
+    <script>
+         const menuToggle = document.querySelector('.menu-toggle');
+         const navLinks = document.querySelector('#navbar ul');
+
+         menuToggle.addEventListener('click', () => {
+           navLinks.classList.toggle('active');
+             });
+    </script>
+
+</html>

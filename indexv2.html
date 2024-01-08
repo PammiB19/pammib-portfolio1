@@ -15,7 +15,7 @@
 <header id='navbar'>
   <nav class='navbar navbar-light justify-content-between'>
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> <img src="logo.jpg" alt="logo image"> </a>
+      <a class="navbar-brand" href="#"> <img src="logo.jpg" alt="logo image"> </a>
       <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link active" aria-current="page" href="indexv2.html">About</a>
           <a class="nav-link" href="casestudy.html">Case Study</a>
           <a class="nav-link" href="contact.html">Contact</a>
           <a class="nav-link" href="plantidentifierv2.html">Plant Identifier</a>
@@ -43,11 +43,11 @@
 </section>
  -->
 
-<section id="about"> 
+<section> 
   <section class='container header'>
       <div class="row">
         <div class="col-7">
-          <img src="hero1.png" alt="hero" class="img-thumbnail">
+          <img src="hero.png" alt="hero" class="img-thumbnail">
         </div>
         <div class="col"> 
           <br> <br> <br> <br> <br> 
@@ -61,7 +61,7 @@
       </div> 
   </section> 
 </section>
-
+  
 <!-- <section id='about'>
   <section class='container'>
     <h1 class='text-alignment-center'>About Me</h1>
@@ -81,12 +81,10 @@
         <div class="box"> HTML </div>
         <div class="box">CSS</div>
         <div class="box">Javascript</div>
-        <div class="box">Bootstrap</div>
         <div class="box">SketchUp</div> <br>
         <div class="box">Canva</div> 
         <div class="box"> Microsoft</div>
         <div class="box">Github</div>
-        <div class="box">Replit</div>
       </div>
     </section>
   </section>
@@ -182,12 +180,3 @@
      </center>
   </footer>
 </html>
-
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('#navbar ul');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-      });
-</script>

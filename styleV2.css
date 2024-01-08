@@ -46,7 +46,7 @@ body {
 
 /* strip all pre-defined css rules  */
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }
 
@@ -82,18 +82,23 @@ select {
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: #d0d6c2;
-    border: 1px solid #B7BFA4;
-    margin: 10px;
+    width: 115px;
+    height: 110px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Great Vibes", cursive;
+    background-color: #f29982;
+    border: 6px solid #FFCABD;
+    margin: 30px;
     display: inline-block;
+    color: #f7f7f7;
     text-align: center; /* Horizontal alignment */
     line-height: 100px; /* Vertical alignment */
+    border-radius: 50%;
 }
 
 * {
-  font-family: 'Garamond';
+  font-family: 'sans-serif';
 }
 
 #hero {
@@ -116,91 +121,55 @@ select {
   padding: 23px;
   font-size: 20px;
   flex-direction: column;
+  font-family: 'sans-serif';
 }
 
 
-/*=========================================
-  Hamburger Icon Styles START
-/* ======================================*/ 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-  position: absolute; 
-  top: 10px;  /* Adjust the top position as needed */
-  right: 20px; /* Adjust the right position as needed */
-  z-index: 1;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #322a2a;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-/*=========================================
-  Hamburger Icon Styles END
-/* ======================================*/ 
-
-#navbar {
-  background-color: #d9c39b;
-}
-
-#navbar ul {
+/* #navbar ul {
   list-style: none;
-  display: flex; /* provides horizontal alignment */
+  display: flex; /* provides horizontal alignment 
   justify-content: space-between;
-
+  padding: 20px;
 }
 
 #navbar li {
-  position: static;
-  top: 50px;
-  right: 0px;
-  margin-right: auto;
+  margin: 0 8px;
 }
 
 #navbar a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
-}
+} */
 
 li a:hover {
   background-color: #c38d93;
 }
 
 #about {
-  background-color: #7da19d;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #skills {
-  background-color: #9fc1b2;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
 #contact {
-  background-color: #a3b8a3;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #footer {
-  background: #a39a7b;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #ffcec2;
 }
 
 p {
   letter-spacing: 2px;
+  margin-left: 40px; 
 }
 
 /* CSS FOR CASE STUDY PAGE BEGINS HERE */
@@ -217,15 +186,13 @@ p {
 /* MEDIA QUERIES */
 @media all and (max-width: 576px) {
   #about {
-    background-color: #9ab078;
-    color: white;
+    color: #464343;
   }
 }
 
 @media all and (max-width: 768px) {
   #skills {
-    background-color: #68928b;
-    color: white; 
+    color: #413e3e; 
   }
 
   .menu-toggle {
@@ -236,7 +203,7 @@ p {
     display: none;
     background-color: white;
     flex-direction: column; /* Stack the links vertically */
-    text-align: right; /* Center-align the links */
+    text-align: center; /* Center-align the links */
     position: absolute; /* Position it above the content */
     top: 50px; /* Adjust the top position as needed */
     right: 0; /* Position it to the right */
@@ -250,20 +217,15 @@ p {
 
 @media all and (max-width: 992px) {
   #contact {
-    background-color: #c09b9b;
-    color: white;
+    color: #2d2a2a;
   }
 }
 
 @media all and (max-width: 1200px) {
   #footer {
-    background-color: #886d6f;
-    color: white;
+    color: #222020;
   }
 }
-
-
- 
 
 /*=========================================
   Plant Identifier browse button
@@ -313,4 +275,184 @@ p {
 .custom-file-input.has-focus + .custom-file-label {
   border-color: red;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#title-case{
+font-size: 60px;
+}
+
+.project {
+  
+  background-color: #ffe6e6;
+  display: flex;
+  width: 90%;
+  height:  300px;
+  align-items: center;
+  margin: 30px auto;
+  padding: 30px;
+  /* box-shadow: 0 40px 8px rgba(0,0,0,0.1); */
+  flex-direction: row; 
+}
+
+.project img {
+  margin-left: 10px;
+  width: 450px;
+  height: 220px;
+  margin-right: 30px;
+  border-radius: 6px;
+}
+
+.container-fluid img{
+  margin-left: 30px;
+  width: 140px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+
+.project-details {
+  flex: 1;  
+  margin-left: 150px;
+  font-family: 'sans-serif', cursive;
+  /* font-family: 'sans-serif'; */
+}
+.project-details p{
+ color: #979191;
+font-family: "Great Vibes", cursive;
+/* font-family: 'sans-serif'; */
+}
+
+.project-details a{
+ /* color: #d9afaf; */
+  color: #ff474c;
+}
+
+.button-case{
+  text-decoration: none;
+  border: 1px solid #7d4545;
+  padding: 6px 9px 6px 9px;
+}
+
+
+form {
+  border: 1px solid #333;
+  padding: 40px;
+  max-width: 30px;
+  margin: 0 auto;
+  border: none;
+  
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+label {
+  width: 100px;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  padding: 3px 5px;
+}
+
+.submit-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  width: 100px;
+  margin: 0 auto;
+  text-decoration: none;
+  border: 3px solid #e68989;
+  padding: 6px 10px 1px 9px;
+  background-color: #ffffff;
+  color: #443b3b;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.heroTextPammi {
+  color: white; 
+  font-weight: bold;
+}
+
+.customButtonColorPammi {
+  background-color: #e28a74 !important;
+  border: 6px solid #FFCABD !important;
+  width: 300px;
+  height: 50px;
+}
+
+.container-header img {
+  margin-left: 30px;
+  width: 140px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 6px;
+}
+
+ol{
+  text-decoration: none;
+  /* color: #e28a74;  */
+}
+ol li a{
+  /* text-decoration: underline dotted; */
+  color: #e28a74;
+}
+#roman-list{
+  list-style-type: upper-roman;
+  padding: 40;
+  
+}
+
+
+#container-case{
+  padding: 40px;
+  color: darkslategrey;
+  font-family: 'Arial', sans-serif;
+  margin:40px;
+  
+}
+
+#container-case p{
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  
+}
+.col {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  
+}
+.col img{
+  height: 600px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+#socials {
+  text-align: center;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
 }
