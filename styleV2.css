@@ -533,7 +533,8 @@ ol li a {
   display: flex;
 }
 
-#hero-text, #title-text {
+#hero-text,
+#title-text {
   align-items: center;
   border-radius: 30px;
   display: flex;
