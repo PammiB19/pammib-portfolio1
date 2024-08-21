@@ -8,7 +8,7 @@ function uploadAndIdentifyPlantID() {
     alert("Please select a photo to upload.");
     return;
   }
-
+// added new api
   // select the first fiel from the files array of an input element
   const selectedFile = photoInput.files[0];
 
