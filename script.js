@@ -22,7 +22,7 @@ function uploadAndIdentifyPlantID() {
     const base64Image = e.target.result;
     console.log('base64Image', base64Image);
     // store variables for the API call 
-    const apiKey = 'cFVsKfpVt7DzUieVHUQyLrs7t0n0kuS9OsuirdE52dkUThwo8m';
+    const apiKey = 'dIVho9JLe7NNasF5mavJ5KcyQfM6kOtLDxr1uXdfupYlwMCznY';
     const latitude = 49.207;
     const longitude = 16.608;
     const health = 'all';
