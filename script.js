@@ -1,3 +1,4 @@
+
 function uploadAndIdentifyPlantID() {
   // Get the photo from the front end 
   const photoInput = document.getElementById("photoInput");
@@ -22,7 +23,7 @@ function uploadAndIdentifyPlantID() {
     const base64Image = e.target.result;
     console.log('base64Image', base64Image);
     // store variables for the API call 
-    const apiKey = 'dIVho9JLe7NNasF5mavJ5KcyQfM6kOtLDxr1uXdfupYlwMCznY';
+    const apiKey = 'FHqBVd6v0Ekjwj0FeRsTae6Dh5O9dYDv0vfTPeJnnjZM4rLtvc';
     const latitude = 49.207;
     const longitude = 16.608;
     const health = 'all';
@@ -73,6 +74,7 @@ function displayPlantIDInfo(plantIdResponse, base64Image){
   // ======================================
   //  PLAN PREVIEW IMAGE
   // ======================================
+
   // Grab the previewImage image element from the front plantIdentifier.html file 
   const previewImage = document.getElementById('previewImage')
   // set the image HTML src atrribute to the preview image we uploaded on the plantIdentifier.html file 
@@ -133,7 +135,6 @@ function displayPlantIDInfo(plantIdResponse, base64Image){
   isPlantElement.innerHTML = `<strong>Is Plant:</strong> ${isPlant}`;
   // append the new div we created to the isPlantContainer container we grabed from our html
   isPlantContainer.appendChild(isPlantElement);
-
 
   // ======================================
   //  COMMON NAME
